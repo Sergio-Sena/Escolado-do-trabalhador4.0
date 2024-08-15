@@ -4,8 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Página da AWS</title>
-    <link rel="stylesheet" href="../../styles.css"> <!-- Ajuste o caminho conforme necessário -->
+    <link rel="stylesheet" href="../../styles.css">
+    <link rel="stylesheet" href="/Projeto escola 4.0/Cloud/aws/styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"> <!-- Link para Font Awesome -->
+    <link rel="stylesheet" href="estilos.css"> <!-- Link para o novo arquivo CSS -->
+
     <script>
         // Função para carregar o header
         function loadHeader() {
@@ -43,11 +46,54 @@
 <body>
     <div id="header"></div> <!-- Placeholder para o header -->
 
-    <main><p>
-        <h1>Arquiteto Cloud Computing AWS</h1>
-        <h2>Aprenda a projetar e implementar soluções de computação em nuvem usando a AWS</h2>
-    </p>
-        
+    <!-- Seção de Introdução à Arquitetura de Cloud Computing -->
+    <section class="intro-section">
+        <h1>Introdução à 
+        <br>Arquitetura de 
+        <br>Cloud Computing</h1>
+    </section>
+
+    <main>
+        <div class="button-container">
+            <button class="styled-button">01 | Introdução à Arquitetura de Cloud Computing</button>
+        </div>
+
+        <h2>O que é Cloud Computing?</h2>
+        <p>
+            Cloud Computing, ou computação em nuvem, é um modelo de fornecimento de serviços de computação sob demanda através da internet. Em vez de depender de recursos físicos locais, como servidores e infraestrutura de rede, a computação em nuvem permite que empresas e indivíduos acessem recursos computacionais escaláveis e flexíveis disponibilizados por provedores de serviços em nuvem, como a Amazon Web Services (AWS).
+        </p>
+
+        <h2>Benefícios da Computação em Nuvem</h2>
+        <p>
+            A adoção da computação em nuvem traz diversos benefícios para organizações de todos os tamanhos. Alguns dos principais benefícios incluem:
+        </p>
+        <p><strong>1. Elasticidade:</strong> A capacidade de aumentar ou diminuir recursos computacionais de forma rápida e fácil, de acordo com a demanda do momento, permite que as empresas se adaptem rapidamente às flutuações de tráfego e demanda, evitando custos excessivos com recursos ociosos.</p>
+        <p><strong>2. Flexibilidade:</strong> A computação em nuvem oferece uma grande variedade de serviços e recursos que podem ser personalizados de acordo com as necessidades específicas de cada negócio. Isso permite que as organizações escolham exatamente o que precisam e paguem apenas pelos recursos utilizados.</p>
+        <p><strong>3. Escalabilidade:</strong> Com a computação em nuvem, é possível escalar verticalmente (aumentar a capacidade de um servidor) ou horizontalmente (adicionar mais servidores) de maneira simples e rápida. Isso garante que os sistemas possam lidar com um aumento repentino de demanda sem comprometer o desempenho.</p>
+        <p><strong>4. Disponibilidade:</strong> Os serviços em nuvem são altamente disponíveis e confiáveis. Os provedores de nuvem utilizam data centers redundantes e tecnologias avançadas para garantir que os serviços estejam sempre disponíveis, minimizando interrupções e tempo de inatividade.</p>
+        <p><strong>5. Segurança:</strong> Os provedores de serviços em nuvem investem fortemente em recursos de segurança para proteger os dados e as aplicações dos clientes. Com equipes especializadas em segurança da informação e recursos avançados de criptografia, a computação em nuvem pode oferecer níveis de segurança superiores aos que muitas organizações conseguiriam implementar por conta própria.</p>
+
+        <h2>Modelos de Serviços em Nuvem</h2>
+        <p>Existem diferentes modelos de serviços em nuvem que atendem às diferentes necessidades das empresas. Alguns dos principais modelos são:</p>
+        <p><strong>1. SaaS (Software as a Service):</strong> Nesse modelo, os usuários finais acessam aplicativos hospedados na nuvem através da internet. O provedor de nuvem é responsável por manter e gerenciar os aplicativos, enquanto os usuários se beneficiam do acesso fácil e rápido a essas aplicações sem precisar se preocupar com a infraestrutura subjacente.</p>
+        <p><strong>2. PaaS (Platform as a Service):</strong> O modelo PaaS permite que os desenvolvedores criem e implantem aplicativos sem se preocupar com a complexidade da infraestrutura de hardware e software subjacente. Os provedores de nuvem oferecem uma plataforma completa de desenvolvimento e implantação de aplicativos, possibilitando um processo mais rápido e eficiente.</p>
+        <p><strong>3. IaaS (Infrastructure as a Service):</strong> No modelo IaaS, os provedores de nuvem disponibilizam acesso virtual a recursos de infraestrutura, como servidores, redes e armazenamento. Os usuários têm controle total sobre a configuração e gerenciamento desses recursos, permitindo que construam e implantem qualquer tipo de sistema ou aplicativo.</p>
+
+        <h2>Arquitetura na Nuvem</h2>
+        <p>
+            A arquitetura de uma aplicação na nuvem é composta por diferentes componentes interconectados, que trabalham juntos para fornecer uma solução completa. Alguns dos principais componentes da arquitetura em nuvem incluem:
+        </p>
+        <p><strong>1. Serviços de armazenamento:</strong> Nuvens como a AWS oferecem uma variedade de serviços de armazenamento, como S3 (Simple Storage Service) e EBS (Elastic Block Store), que permitem armazenar e recuperar dados de forma segura e escalável.</p>
+        <p><strong>2. Serviços de computação:</strong> Os serviços de computação em nuvem, como o EC2 (Elastic Compute Cloud), fornecem recursos de processamento escaláveis e flexíveis. Eles permitem executar aplicações em máquinas virtuais, fornecendo poder computacional conforme necessário.</p>
+        <p><strong>3. Serviços de rede:</strong> A rede é um componente essencial na arquitetura de nuvem. Serviços como o VPC (Virtual Private Cloud) permitem criar redes virtuais isoladas e seguras na nuvem, garantindo a comunicação entre os diferentes componentes da aplicação.</p>
+        <p><strong>4. Serviços de monitoramento:</strong> A monitoração dos recursos e aplicações na nuvem é fundamental para garantir o desempenho, a disponibilidade e a segurança da infraestrutura. Serviços como o CloudWatch permitem monitorar métricas e eventos em tempo real.</p>
+
+        <p class="conclusao">Conclusão - Introdução à Arquitetura de Cloud Computing</p>
+        <p>
+            Neste curso, você aprendeu sobre os princípios básicos da arquitetura de Cloud Computing e como ela oferece flexibilidade, escalabilidade e disponibilidade para empresas que desejam migrar para a nuvem. Agora, você está preparado para explorar e aproveitar os recursos da AWS para projeto e implantação de soluções na nuvem.
+        </p>
+
+        <h3>Desenvolvimento e Implantação de Aplicações na AWS</h3>
     </main>
 
     <div id="footer"></div> <!-- Placeholder para o footer -->

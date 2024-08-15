@@ -1,58 +1,121 @@
 body {
-    font-family: Arial, sans-serif;
     margin: 0;
+    font-family: 'Arial', sans-serif;
+    color: #fff;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
     padding: 0;
-    background-color: #f4f4f4;
+    margin: 0;
 }
 
-header {
-    background: #007BFF;
-    color: white;
-    padding: 20px;
+nav ul li {
+    margin: 0 10px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+.intro-section {
+    background-color: #00796B;
+    height: 60vh;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    position: relative;
+}
+
+.intro-section h1 {
+    font-size: 3em;
+    max-width: 600px;
+}
+
+.intro-section::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 200px;
+    height: 200px;
+    background-image: url('patterns.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.styled-button {
+    font-family: 'Arial', sans-serif;
+    font-size: 16px;
+    color: #4ADEDE;
+    background-color: #E8FCFC;
+    border: 2px solid #4ADEDE;
+    border-radius: 20px;
+    padding: 10px 20px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
     text-align: center;
+    transition: background-color 0.3s ease;
 }
 
-section {
-    padding: 20px;
-    margin: 10px;
-    background: white;
-    border-radius: 5px;
+.styled-button:hover {
+    background-color: #4ADEDE;
+    color: #ffffff;
+}
+
+.styled-button:focus {
+    outline: none;
+}
+
+.styled-button::before {
+    margin-right: 10px;
+    font-size: 14px;
+    color: #4ADEDE;
+}
+
+main {
+    font-family: 'Arial', sans-serif;
+    font-size: 16px;
+    color: #333;
+    line-height: 1.6;
+    margin: 20px;
 }
 
 h2 {
-    color: #007BFF;
+    font-size: 20px;
+    color: #1A202C; /* Cor do título de conclusão */
+    margin-top: 30px;
 }
 
-.cta-button {
-    background-color: #28a745;
-    color: white;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
+h3 {
+    font-size: 18px;
+    color: #1A202C; /* Cor do título de subtítulo */
+    margin-top: 20px;
+}
+
+p {
+    font-size: 1.2em;
+    line-height: 1.6;
+    margin-bottom: 15px; /* Espaço entre parágrafos */
+    text-align: auto;
+}
+
+p.conclusao {
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-top: 40px;
     text-align: center;
-    display: inline-block;
-    text-decoration: none;
-}
-
-footer {
-    text-align: center;
-    padding: 10px;
-    background: #007BFF;
-    color: white;
-}
-
-.social-icons {
-    margin: 10px 0;
-}
-
-.social-icons a {
-    color: white;
-    margin: 0 10px;
-    text-decoration: none;
-    font-size: 24px; /* Tamanho dos ícones */
-}
-
-.social-icons a:hover {
-    opacity: 0.7; /* Efeito de hover */
+    color: rgb(34, 154, 143); /* Mantido seu estilo */
 }
