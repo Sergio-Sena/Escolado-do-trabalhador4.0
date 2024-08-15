@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página da AWS</title>
+    <link rel="stylesheet" href="../../styles.css"> <!-- Ajuste o caminho conforme necessário -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"> <!-- Link para Font Awesome -->
+    <script>
+        // Função para carregar o header
+        function loadHeader() {
+            fetch('../../modulos/header.html')  // Caminho atualizado
+                .then(response => response.text())
+                .then(data => {
+                    document.getElementById('header').innerHTML = data;
+                })
+                .catch(error => {
+                    console.error('Erro ao carregar o header:', error);
+                    document.getElementById('header').innerHTML = '<p>Erro ao carregar o header</p>';
+                });
+        }
+
+        // Função para carregar o footer
+        function loadFooter() {
+            fetch('../../modulos/footer.html')  // Caminho atualizado
+                .then(response => response.text())
+                .then(data => {
+                    document.getElementById('footer').innerHTML = data;
+                })
+                .catch(error => {
+                    console.error('Erro ao carregar o footer:', error);
+                    document.getElementById('footer').innerHTML = '<p>Erro ao carregar o footer</p>';
+                });
+        }
+
+        // Chama as funções ao carregar a página
+        window.onload = function() {
+            loadHeader();
+            loadFooter();
+        };
+    </script>
+</head>
+<body>
+    <div id="header"></div> <!-- Placeholder para o header -->
+
+    <main><p>
+        <h1>Arquiteto Cloud Computing AWS</h1>
+        <h2>Aprenda a projetar e implementar soluções de computação em nuvem usando a AWS</h2>
+    </p>
+        
+    </main>
+
+    <div id="footer"></div> <!-- Placeholder para o footer -->
+</body>
+</html>

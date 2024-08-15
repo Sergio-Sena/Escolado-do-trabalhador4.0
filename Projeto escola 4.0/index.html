@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aprenda Tecnologia em Cloud com as nuvens da AWS e Azure</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"> <!-- Link para Font Awesome -->
+    <script>
+        // Função para carregar o header
+        function loadHeader() {
+            fetch('modulos/header.html')
+                .then(response => response.text())
+                .then(data => {
+                    document.getElementById('header').innerHTML = data;
+                })
+                .catch(error => console.error('Erro ao carregar o header:', error));
+        }
+
+        // Função para carregar o footer
+        function loadFooter() {
+            fetch('modulos/footer.html')
+                .then(response => response.text())
+                .then(data => {
+                    document.getElementById('footer').innerHTML = data;
+                })
+                .catch(error => console.error('Erro ao carregar o footer:', error));
+        }
+
+        // Chama as funções ao carregar a página
+        window.onload = function() {
+            loadHeader();
+            loadFooter();
+        };
+    </script>
+</head>
+<body>
+    <div id="header"></div> <!-- Placeholder para o header -->
+    
+    <section>
+        <h2>Por que aprender tecnologia em Cloud?</h2>
+        <ul>
+            <li><strong>Flexibilidade:</strong> Trabalhe de qualquer lugar do mundo.</li>
+            <li><strong>Alta demanda:</strong> Profissionais de cloud são altamente valorizados.</li>
+            <li><strong>Inovação constante:</strong> Esteja na vanguarda das novas tecnologias.</li>
+            <li><strong>Oportunidades de carreira:</strong> Desde desenvolvedor até arquiteto de soluções.</li>
+        </ul>
+    </section>
+    <section>
+        <h2>Dicas para Iniciar sua Jornada</h2>
+        <ol>
+            <li><strong>Pesquise cursos online:</strong> Plataformas como Coursera, Udacity e Alura oferecem ótimos cursos.</li>
+            <li><strong>Pratique:</strong> Crie projetos pessoais usando serviços de cloud como AWS, Google Cloud ou Azure.</li>
+            <li><strong>Participe de comunidades:</strong> Junte-se a fóruns e grupos no LinkedIn para trocar experiências e aprender com outros.</li>
+        </ol>
+    </section>
+    <section>
+        <h2>O que nossos alunos dizem</h2>
+        <blockquote>
+            <p>"Graças ao curso de cloud, consegui uma promoção no meu trabalho!" - Ana, 28 anos</p>
+        </blockquote>
+        <blockquote>
+            <p>"A tecnologia em cloud abriu portas que eu nunca imaginei!" - Carlos, 32 anos</p>
+        </blockquote>
+    </section>
+    <section>
+        <h2>Está pronto para dar o primeiro passo?</h2>
+        <div>
+            <a href="../Projeto escola 4.0/Cloud/aws/index.html" class="cta-button" target="_blank" rel="noopener noreferrer">AWS</a>
+            <a href="../Projeto escola 4.0/Cloud/azure/index.html" class="cta-button" target="_blank" rel="noopener noreferrer">Azure</a>
+        </div>
+    </section>
+    
+    <div id="footer"></div> <!-- Placeholder para o footer -->
+</body>
+</html>
